@@ -1,6 +1,6 @@
 wins = []
 
-with open("text.txt", "r") as file:
+with open("day04.txt", "r") as file:
     copies = [0] * len(file.readlines())
     file.seek(0)
     k = 1
