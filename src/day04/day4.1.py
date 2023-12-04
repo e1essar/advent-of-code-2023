@@ -1,6 +1,6 @@
 total = 0
 
-with open("text.txt", "r") as file:
+with open("day04.txt", "r") as file:
     for line in file:
         if ':' and '|' in line:
             w_nums, my_nums = [part.split() for part in line.split(':')[1].split('|')]
