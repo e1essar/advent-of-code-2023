@@ -67,14 +67,14 @@ namespace Day05
 
 
             var result = seeds
-                .Select(num => convertSeed(convertSeed(convertSeed(convertSeed(convertSeed(convertSeed(convertSeed(num, 
-                maps["seed-to-soil"]), 
-                maps["soil-to-fertilizer"]), 
-                maps["fertilizer-to-water"]), 
-                maps["water-to-light"]), 
-                maps["light-to-temperature"]), 
-                maps["temperature-to-humidity"]), 
-                maps["humidity-to-location"]))
+                .Select(num => convertSeed(convertSeed(convertSeed(convertSeed(convertSeed(convertSeed(convertSeed(
+                    num, maps["seed-to-soil"]), 
+                    maps["soil-to-fertilizer"]), 
+                    maps["fertilizer-to-water"]), 
+                    maps["water-to-light"]), 
+                    maps["light-to-temperature"]), 
+                    maps["temperature-to-humidity"]), 
+                    maps["humidity-to-location"]))
                 .Min();
 
             Console.WriteLine(result);
