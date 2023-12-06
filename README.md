@@ -1,2 +1,2 @@
 # Advent Of Code 2023
-Goal: every two puzzles - another language
+Goal: every two days - another language
