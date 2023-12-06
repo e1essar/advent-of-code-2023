@@ -24,11 +24,18 @@ namespace Day05
         }
         static void Main()
         {
-            var input = File.ReadAllText("C:\\Users\\Igor\\Desktop\\text.txt");
+            var input = File.ReadAllText("day05.txt");
 
-            var strings = input.Trim().Split("\n").Select(s => s.TrimEnd()).ToArray();
+            var strings = input.Trim()
+                .Split("\n")
+                .Select(s => s.TrimEnd())
+                .ToArray();
             
-            var seeds = strings[0].Split(": ")[1].Split(' ').Select(s => long.Parse(s)).ToArray();
+            var seeds = strings[0]
+                .Split(": ")[1]
+                .Split(' ')
+                .Select(s => long.Parse(s))
+                .ToArray();
             
             var maps = new Dictionary<string, List<Map>>();
             var map = (string)null;
@@ -46,7 +53,6 @@ namespace Day05
                     continue;
                 }
                 var ss = s.Split(' ');
-                //Console.WriteLine(string.Join(' ', ss));
                 maps[map].Add(new Map(long.Parse(ss[1]), long.Parse(ss[0]), long.Parse(ss[2])));
             }
 
