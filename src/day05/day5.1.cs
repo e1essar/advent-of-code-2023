@@ -26,7 +26,8 @@ namespace Day05
         {
             var input = File.ReadAllText("day05.txt");
 
-            var strings = input.Trim()
+            var strings = input
+                .Trim()
                 .Split("\n")
                 .Select(s => s.TrimEnd())
                 .ToArray();
