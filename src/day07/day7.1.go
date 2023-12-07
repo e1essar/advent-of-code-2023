@@ -151,6 +151,6 @@ func main() {
 		totalResult += handsMap[hand].Bid * (index + 1)
 	}
 
-	fmt.Println("Total Result:", totalResult)
+	fmt.Println(totalResult)
 
 }
