@@ -27,7 +27,7 @@ func findLCM(numbers []int) int {
 	return result
 }
 
-func processWithCondition(current string, dataMap map[string]string, rules string) int {
+func process(current string, dataMap map[string]string, rules string) int {
 	count := 0
 	if road, ok := dataMap[current]; ok {
 		for !strings.HasSuffix(current, "Z") {
@@ -86,7 +86,7 @@ func main() {
 	sort.Strings(list)
 	counts := make([]int, 6)
 	for i := 0; i < len(counts); i++ {
-		counts[i] = processWithCondition(list[i], dataMap, rules)
+		counts[i] = process(list[i], dataMap, rules)
 	}
 
 	result := findLCM(counts)
