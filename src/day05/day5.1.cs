@@ -1,10 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Day05
 {
@@ -71,7 +65,6 @@ namespace Day05
 
                 return convert != null ? num + convert.Destination - convert.Source : num;
             }
-
 
             var result = seeds
                 .Select(num => convertSeed(convertSeed(convertSeed(convertSeed(convertSeed(convertSeed(convertSeed(
