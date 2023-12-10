@@ -14,18 +14,8 @@ namespace Day05 {
         }
         static void Main() {
             var input = File.ReadAllText("day05.txt");
-            var strings = input
-                .Trim()
-                .Split("\n")
-                .Select(s => s.TrimEnd())
-                .ToArray();
-            
-            var seeds = strings[0]
-                .Split(": ")[1]
-                .Split(' ')
-                .Select(s => long.Parse(s))
-                .ToArray();
-            
+            var strings = input.Trim().Split("\n").Select(s => s.TrimEnd()).ToArray();
+            var seeds = strings[0].Split(": ")[1].Split(' ').Select(s => long.Parse(s)).ToArray();
             var maps = new Dictionary<string, List<Map>>();
             var map = (string)null;
             foreach (var s in strings.Skip(2)) {
