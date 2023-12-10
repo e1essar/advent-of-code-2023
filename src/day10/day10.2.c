@@ -72,7 +72,7 @@ void move(char *direction, int *i, int *j, int *steps) {
 }
 
 int main() {
-    FILE *file = fopen("C:\\Users\\Igor\\Desktop\\coding\\advent-of-code-2023\\day10.txt", "r");
+    FILE *file = fopen("day10.txt", "r");
 
     if (!file) {
         fprintf(stderr, "Open Error\n");
