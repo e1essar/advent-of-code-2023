@@ -93,16 +93,11 @@ int main() {
 
     fclose(file);
 
+    int startRow = -1;
+    int startCol = -1;
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
             loopMap[i][j] = -1;
-        }
-    }
-
-    int startRow = -1;
-    int startCol = -1;
-    for (int i = 0; i < rows && startRow == -1; ++i) {
-        for (int j = 0; j < cols && startCol == -1; ++j) {
             if (matrix[i][j] == 'S') {
                 loopMap[i][j] = 0;
                 startRow = i;
