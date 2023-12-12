@@ -10,7 +10,7 @@ The goal of this repository is to solve the Advent of Code 2023 challenges using
  4. **Day 7-8**: Go 🐿️
  5. **Day 9-10**: C 📚
  6. **Day 11-12**: Rust 🦀
- 7. **Day 13-14**:
+ 7. **Day 13-14**: Java ☕
  8. **Day 15-16**:
  9. **Day 17-18**:
 10. **Day 19-20**:
